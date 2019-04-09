@@ -11,9 +11,11 @@ const styles = {
   borderRadius: 3,
 }
 
-export default ({ placeholder }) => (
+export default ({ placeholder, secureTextEntry, keyboardType }) => (
   <TextInput
     style={styles}
     placeholder={placeholder}
+    secureTextEntry={secureTextEntry}
+    keyboardType={keyboardType}
   />
 )

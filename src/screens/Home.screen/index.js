@@ -23,8 +23,14 @@ export default class HomeScreen extends React.Component {
           <View style={styles.headerContainer}>
             <Text style={styles.headerText}>Sign In</Text>
           </View>
-          <TextInput placeholder="Type here your login" />
-          <TextInput placeholder="Type here your password" />
+          <TextInput
+            placeholder="Type here your login"
+            keyboardType="email-address"
+          />
+          <TextInput
+            placeholder="Type here your password"
+            secureTextEntry={true}
+          />
         </View>
 
         <View style={styles.submitContainer}>

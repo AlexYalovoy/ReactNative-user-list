@@ -1,5 +1,6 @@
 import React from 'react';
-import { TextInput } from 'react-native';
+import { Input } from 'react-native-elements';
+import { NavigationEvents } from 'react-navigation';
 
 const styles = {
   backgroundColor: 'white',
@@ -12,10 +13,11 @@ const styles = {
 }
 
 export default ({ placeholder, secureTextEntry, keyboardType }) => (
-  <TextInput
-    style={styles}
+  <Input
+    inputStyle={styles}
     placeholder={placeholder}
     secureTextEntry={secureTextEntry}
     keyboardType={keyboardType}
+    inputContainerStyle={{borderBottomWidth: 0}}
   />
 )

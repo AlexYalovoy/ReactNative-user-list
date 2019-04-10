@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import { WebBrowser } from 'expo';
 
-import TextInput from '../../components/TextInput';
+import Input from '../../components/TextInput';
 import Button from '../../components/Button';
 import style from './style';
 
@@ -23,11 +23,11 @@ export default class HomeScreen extends React.Component {
           <View style={styles.headerContainer}>
             <Text style={styles.headerText}>Sign In</Text>
           </View>
-          <TextInput
+          <Input
             placeholder="Type here your login"
             keyboardType="email-address"
           />
-          <TextInput
+          <Input
             placeholder="Type here your password"
             secureTextEntry={true}
           />

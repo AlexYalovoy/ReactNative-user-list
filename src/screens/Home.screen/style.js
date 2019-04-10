@@ -9,15 +9,16 @@ export default {
       alignItems: 'center',
       marginBottom: 20,
     },
-    inputContainer: {
-      flexGrow: 2,
-      justifyContent: 'flex-end',
-    },
     headerText: {
       fontSize: 20,
       color: 'black',
       lineHeight: 24,
       textAlign: 'center',
+    },
+    inputContainer: {
+      flexGrow: 2,
+      justifyContent: 'flex-end',
+      width: 300,
     },
     submitContainer: {
       alignItems: 'center',
